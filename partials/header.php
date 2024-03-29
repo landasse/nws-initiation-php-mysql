@@ -7,9 +7,9 @@
  * Elles sont définies ici, au début du fichier, pour faciliter la maintenance du code.
  * Si on veut changer le titre du site, on le fait ici et il sera automatiquement mis à jour dans le fichier "partials/header.php"
  */
-$meta_site_name = "NWS";
-$meta_site_description = "Initiation au développement web avec PHP et MySQL";
-$meta_author = "Raphael Sanchez";
+$meta_site_name = "Olivier, un bonbon coca?";
+$meta_site_description = "Olivier, un bonbon coca?";
+$meta_author = "Andasse Lola ;) et un peu Yann qui m'a aidé";
 $meta_robot = "index, follow";
 ?> <!-- On oublie pas de fermer ici la balise PHP pour commencer à écrire du HTML -->
 
@@ -30,7 +30,7 @@ $meta_robot = "index, follow";
   <meta property="og:description" content="<?= (isset($meta_description)) ? $meta_description : $meta_site_description ?>">
   <meta property="og:url" content="<?php echo $_SERVER['REQUEST_URI'] ?>">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/evenements/images/Logo simple marron.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.orange.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/>
   <link rel="stylesheet" href="/assets/styles/app.css">
@@ -41,10 +41,17 @@ $meta_robot = "index, follow";
 <body>
 
 <header>
+
+
   <nav class="container">
     <a href="/">
-      <img src="/assets/images/logo.svg" width="180" height="70" alt="Logo NWS">
+    <img src="/evenements/images/Logo simple marron.png" width="100" height="100" alt="Logo Logo">
+
     </a>
+    <div class="onglet1">
+    <a href="../evenements"class="button-red">Proposition événement</a> </div>
+    <div class="onglet2">
+    <a href="../evenements/propositions.php">Liste des événements</a> </div>
     <button class="contrast outline" data-toggle="theme" aria-label="toggle theme mode">
       <i data-feather="sun"></i>
       <i data-feather="moon" hidden></i>
